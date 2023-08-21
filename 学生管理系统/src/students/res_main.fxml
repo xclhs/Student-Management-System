@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rprint" prefHeight="420.0" prefWidth="610.0" style="-fx-border-width: 20px;-fx-border-color:rgba(4,6,4,0.7);-fx-background-color: #cccccc" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.res_main">
+   <children>
+      <Label layoutX="239.0" layoutY="65.0" text="用户名：" />
+      <Label layoutX="221.0" layoutY="102.0" text="职工编号：" />
+      <Label layoutX="246.0" layoutY="138.0" text="学  院：" />
+      <Button fx:id="rchange" layoutX="168.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#chaHandler" prefHeight="36.0" prefWidth="247.0" text="修改信息" />
+      <Button fx:id="rgra" layoutX="168.0" layoutY="230.0" mnemonicParsing="false" onMouseClicked="#finHandler" prefHeight="36.0" prefWidth="247.0" text="单科查询成绩" />
+
+      <Button layoutX="168.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#priHandler" prefHeight="36.0" prefWidth="247.0" text="成绩打印" />
+      <Button layoutX="520.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#quiHandler" prefHeight="36.0" prefWidth="62.0" style="-fx-background-color: #cccccc;-fx-border-color: #cccccc;-fx-font-weight: bold" text="退出" />
+      <Text fx:id="rname" layoutX="328.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" />
+      <Text fx:id="rid" layoutX="328.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="职工编号" />
+      <Text fx:id="rschool" layoutX="328.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="计算机" />
+      <Button fx:id="rgra2" layoutX="168.0" layoutY="293.0" mnemonicParsing="false" onMouseClicked="#finAHandler" prefHeight="36.0" prefWidth="247.0" text="单人查询成绩" />
+   </children>
+</AnchorPane>

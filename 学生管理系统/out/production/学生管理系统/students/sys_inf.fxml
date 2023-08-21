@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="420.0" prefWidth="610.0" style="-fx-border-width: 20px;-fx-border-color:rgba(4,6,4,0.7);-fx-background-color: #cccccc" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.SysInf">
+    <children>
+        <Label fx:id="sname2" layoutX="171.0" layoutY="70.0" text="用户名：" visible="false" />
+        <Label fx:id="sid2" layoutX="178.0" layoutY="102.0" text="学  号：" visible="false" />
+        <Label fx:id="sschool2" layoutX="178.0" layoutY="138.0" text="学  院：" visible="false" />
+        <Label fx:id="smajor2" layoutX="178.0" layoutY="169.0" text="专  业：" visible="false" />
+        <Button fx:id="quit" layoutX="524.0" layoutY="34.0" mnemonicParsing="false" onMouseClicked="#quiHandler" prefHeight="36.0" prefWidth="62.0" style="-fx-background-color: #cccccc;-fx-border-color: #cccccc;-fx-font-weight: bold" text="返回" />
+        <Label fx:id="ssex2" layoutX="371.0" layoutY="103.0" text="性  别：" visible="false" />
+        <Label fx:id="sbirth2" layoutX="371.0" layoutY="138.0" text="生  日：" visible="false" />
+        <Text fx:id="sid1" layoutX="263.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="学号" visible="false" />
+        <Text fx:id="sschool1" layoutX="263.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="计算机" visible="false" />
+        <Text fx:id="smajor1" layoutX="263.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="网安" visible="false" />
+        <Text fx:id="ssex1" layoutX="436.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="男" visible="false" />
+        <Text fx:id="sbirth1" layoutX="435.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1998.12.12" visible="false" />
+      <Text fx:id="sname1" layoutX="263.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名" visible="false" />
+
+
+
+        <Text fx:id="tname1" layoutX="272.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="教师名" visible="false" />
+        <Text fx:id="tid1" layoutX="288.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12" visible="false" />
+        <Text fx:id="tschool1" layoutX="272.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="计算机" visible="false" />
+        <Text fx:id="tdepart1" layoutX="272.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="互联网" visible="false" />
+        <Label fx:id="tname2" layoutX="174.0" layoutY="39.0" text="用户名：" visible="false" />
+        <Label fx:id="tid2" layoutX="156.0" layoutY="76.0" text="职工编号：" visible="false" />
+        <Label fx:id="tschool2" layoutX="178.0" layoutY="111.0" text="学  院：" visible="false" />
+        <Label fx:id="tdepart2" layoutX="188.0" layoutY="144.0" text="  系  ：" visible="false" />
+
+
+        <Label fx:id="rname2" layoutX="239.0" layoutY="65.0" text="用户名：" visible="false" />
+        <Label fx:id="rid2" layoutX="221.0" layoutY="102.0" text="职工编号：" visible="false" />
+        <Label fx:id="rschool2" layoutX="246.0" layoutY="138.0" text="学  院：" visible="false" />
+        <Text fx:id="rname1" layoutX="328.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" visible="false" />
+        <Text fx:id="rid1" layoutX="328.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="职工编号" visible="false" />
+        <Text fx:id="rschool1" layoutX="328.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="计算机" visible="false" />
+      <Label fx:id="off" layoutX="91.0" layoutY="144.0" text="职工号/学号：" />
+      <TextField fx:id="id" layoutX="221.0" layoutY="138.0" prefHeight="36.0" prefWidth="192.0" />
+      <Button fx:id="ssear" layoutX="258.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#subHandler" text="信息查询" />
+
+
+
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="420.0" prefWidth="610.0" style="-fx-border-width: 20px;-fx-border-color:rgba(4,6,4,0.7);-fx-background-color: #cccccc" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.tea_cha">
+    <children>
+        <Button fx:id="quit" layoutX="521.0" layoutY="30.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="62.0" style="-fx-background-color: #cccccc;-fx-border-color: #cccccc;-fx-font-weight: bold" text="返回" onMouseClicked="#quiHandler"/>
+        <Label fx:id="rid" layoutX="46.0" layoutY="49.0" text="职工号：" />
+        <TextField fx:id="tname" layoutX="118.0" layoutY="120.0" prefHeight="36.0" prefWidth="164.0" />
+        <Button fx:id="tsub" layoutX="318.0" layoutY="324.0" mnemonicParsing="false" text="提交" onMouseClicked="#subHandler"/>
+        <Text fx:id="tid" layoutX="126.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="职工号" />
+        <Label layoutX="55.0" layoutY="126.0" text="姓名：" />
+        <Label layoutX="348.0" layoutY="206.0" text="学院：" />
+        <Label layoutX="348.0" layoutY="126.0" text="密码：" />
+        <TextField fx:id="tschool" layoutX="418.0" layoutY="200.0" prefHeight="36.0" prefWidth="177.0" />
+        <TextField fx:id="tpsw" layoutX="418.0" layoutY="120.0" prefHeight="36.0" prefWidth="177.0" />
+      <Label layoutX="55.0" layoutY="206.0" text="系  ：" />
+      <TextField fx:id="tdepart" layoutX="118.0" layoutY="200.0" prefHeight="36.0" prefWidth="164.0" />
+    </children>
+</AnchorPane>

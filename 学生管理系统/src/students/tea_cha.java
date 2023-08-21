@@ -1,0 +1,90 @@
+/**
+ * Copyright (C), 2015-2018,
+ * FileName: tea_cha
+ * Author:   xclhs
+ * Date:     2018/12/2 12:43
+ * Description:
+ * History:
+ * <author>          <time>          <version>          <desc>
+ * xclhs           修改时间           版本号              描述
+ */
+package students;
+
+import com.alibaba.fastjson.JSONObject;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+/**
+ * 〈一句话功能简述〉<br> 
+ * 〈〉
+ *
+ * @author xclhs
+ * @create 2018/12/2
+ * @since 1.0.0
+ */
+public class tea_cha implements Initializable {
+    private Client client = null;
+    private JSONObject params = null;
+    private index app;
+    @FXML
+    private TextField tname;
+    @FXML
+    private TextField tschool;
+    @FXML
+    private Text tid;
+    @FXML
+    private TextField tpsw;
+    @FXML
+    private TextField tdepart;
+
+
+
+
+    public void setApp(index app){
+        this.app = app;
+    }
+
+
+
+    @FXML
+    public void quiHandler(){
+       app.draw(17, "");
+    }
+
+   @FXML void subHandler(){
+       params.put("mid",3 );
+        params.put("name",tname.getText() );
+        params.put("school",tschool.getText() );
+        params.put("depart",tdepart.getText() );
+        params.put("psw",tpsw.getText() );
+        this.app.params = params;
+        this.app.SendInfo(params);
+       new Thread(new Parser(client,app ,params )).start();
+
+   }
+
+
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
+    public void set(Client client, JSONObject ja){
+        this.client = client;
+        this.params = ja;
+        this.tid.setText(ja.getString("id"));
+        this.tname.setText(ja.getString("name"));
+        this.tpsw.setText(ja.getString("psw"));
+        this.tschool.setText(ja.getString("school"));
+        this.tdepart.setText(ja.getString("depart"));
+    }
+}
+

@@ -1,0 +1,1 @@
+java -Dfile.encoding=utf-8 -jar 学生管理系统.jar
